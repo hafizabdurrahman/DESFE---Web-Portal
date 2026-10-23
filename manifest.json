@@ -1,1 +1,42 @@
-{"name":"DESFE - Digital Education System for Everyone","short_name":"DESFE","description":"Build courses, syllabus, MCQ tests and practice. Works offline.","start_url":"./index.html","scope":"./","display":"standalone","orientation":"portrait","background_color":"#FFF8F0","theme_color":"#F96806","categories":["education"],"icons":[{"src":"icons/icon-192.png","sizes":"192x192","type":"image/png"},{"src":"icons/icon-512.png","sizes":"512x512","type":"image/png"},{"src":"icons/maskable-512.png","sizes":"512x512","type":"image/png","purpose":"maskable"}],"shortcuts":[{"name":"Tests","url":"./index.html#/tests"},{"name":"Courses","url":"./index.html#/courses"}]}
+{
+    "name": "DESFE - Digital Education System for Everyone",
+    "short_name": "DESFE",
+    "description": "Build courses, syllabus, MCQ tests and practice. Works offline.",
+    "start_url": "./index.html",
+    "scope": "./",
+    "display": "standalone",
+    "orientation": "portrait",
+    "background_color": "#FFF8F0",
+    "theme_color": "#F96806",
+    "categories": [
+        "education"
+    ],
+    "icons": [
+        {
+            "src": "icons/icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/maskable-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+        }
+    ],
+    "shortcuts": [
+        {
+            "name": "Tests",
+            "url": "./index.html#/tests"
+        },
+        {
+            "name": "Courses",
+            "url": "./index.html#/courses"
+        }
+    ]
+}

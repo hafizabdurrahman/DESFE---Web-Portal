@@ -2,9 +2,15 @@
 Offline-first PWA (HTML/CSS/JS, no build step). Theme: orange gradient `#F96806 / #FC9311 / #C32202`, font Plus Jakarta Sans (in `fonts/`), light + dark mode.
 
 ## Setup
-1. Copy `.env.example` to `.env`, fill in your Appwrite values, run `node build-env.js` (creates `env.js`).
-2. Serve over HTTPS or localhost (`npx serve .`) and use "Add to Home Screen / Install".
-3. Appwrite console: add your site's domain as a **Web platform**.
+1. **Configure Appwrite.** Easiest: open `env.js` and paste your endpoint, project ID, database ID, table ID (`users`) and bucket ID. Or copy `.env.example` to `.env`, fill it in and run `node build-env.js`.
+   - A hosting service (Netlify/Vercel) does **not** read `.env` at runtime. The values must end up inside `env.js` that you deploy.
+2. Keep the folder layout: `index.html, env.js, sw.js, manifest.json, vendor/appwrite.js, fonts/, icons/`.
+3. Serve over HTTPS or localhost (`npx serve .`) and use "Add to Home Screen / Install".
+4. Appwrite console: Overview -> Add platform -> **Web**, hostname = your site domain (e.g. `localhost`, `yourapp.netlify.app`). Without this the browser blocks every request.
+5. After changing `env.js` or deploying a new version, bump `V` in `sw.js` (e.g. `desfe-v3`).
+
+## Troubleshooting
+The message under the form tells you what is wrong: SDK file missing, `env.js` empty, offline, or the Appwrite error text. "Cannot reach Appwrite" = wrong endpoint or Web platform not added. "Account was created but the profile could not be saved" = table columns/permissions; fix them, then use **Log in** (it recreates the missing profile row).
 
 ## Appwrite `users` table (Databases, id = `users`; Document ID = Auth user ID)
 | Column | Type | Size / notes |

@@ -1,3 +1,33 @@
-[{"question":"What is 2 + 2?","options":["3","4","5","6"],"answer":1,"explanation":"Basic addition."},
-{"question":"Capital of France?","options":["Paris","Rome","Berlin","Madrid"],"answer":"A"},
-{"question":"H2O is?","options":["Salt","Water","Acid","Gas"],"answer":"Water"}]
+[
+    {
+        "question": "What is 2 + 2?",
+        "options": [
+            "3",
+            "4",
+            "5",
+            "6"
+        ],
+        "answer": 1,
+        "explanation": "Basic addition."
+    },
+    {
+        "question": "Capital of France?",
+        "options": [
+            "Paris",
+            "Rome",
+            "Berlin",
+            "Madrid"
+        ],
+        "answer": "A"
+    },
+    {
+        "question": "H2O is?",
+        "options": [
+            "Salt",
+            "Water",
+            "Acid",
+            "Gas"
+        ],
+        "answer": "Water"
+    }
+]
